@@ -6,9 +6,9 @@
 #include <unistd.h>
 
 
-int main()
+int main(int argc, char **argv)
 {
-	char decimal[] = "8498193041717982719402398252390853829057214352898763248";
+	char *decimal = argv[1];
 
 	unsigned char *bin = NULL;
 	char *divisible = NULL;
